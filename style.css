@@ -2,10 +2,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
 }
 
 h2 {
     color: steelblue;
+    margin-bottom: 30px;
 }
 
 .paket-container {
@@ -17,28 +25,28 @@ h2 {
 .paket {
     flex: 1;
     min-width: 0;
-    background: white;
+    background-color: white;
     box-shadow: 0 2px 6px #ccc;
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    height: 88px;
+    height: 89px;
     box-sizing: border-box;
     color: white;
     text-align: center;
-    padding: 12px 5px;
+    padding: 12px 4px;
 }
 
 .header h3 {
     font-size: 16px;
-    margin: 10px 0 8px;
+    margin: 10px 0;
 }
 
 .header p {
-    margin: 0;
     font-size: 14px;
+    margin: 0;
 }
 
 .biru {
@@ -69,8 +77,70 @@ li {
 button {
     border: none;
     color: white;
-    padding: 12px 5px;
+    padding: 12px 4px;
     margin: 8px;
     cursor: pointer;
     font-size: 13px;
+}
+
+.judul-data {
+    margin-top: 65px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #49388c;
+    color: white;
+    padding: 10px 6px;
+}
+
+td {
+    border: 1px solid #c9b88c;
+    padding: 10px 6px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff2cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffe5a0;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .paket-container {
+        gap: 8px;
+    }
+
+    .header h3 {
+        font-size: 12px;
+    }
+
+    .header p,
+    li,
+    button {
+        font-size: 11px;
+    }
+
+    li {
+        padding: 12px 0;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 7px 3px;
+    }
 }
